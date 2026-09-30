@@ -7,11 +7,13 @@ pipeline {
     }
 
     stages {
-     stage('hello'){
-         steps{
-    echo "hello dosto"
-}
-     }
+
+        stage('Hello') {
+            steps {
+                echo "hello dosto"
+            }
+        }
+
         stage('CODE') {
             steps {
                 cloneRepo(
