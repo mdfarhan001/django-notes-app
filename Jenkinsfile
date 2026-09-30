@@ -7,7 +7,11 @@ pipeline {
     }
 
     stages {
-
+     stage('hello'){
+         steps{
+    echo "hello"
+}
+     }
         stage('CODE') {
             steps {
                 cloneRepo(
